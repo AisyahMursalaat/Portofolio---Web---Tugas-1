@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aisyah EM - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Brand/Logo -->
+        <div class="nav-brand">Portfolio</div>
+
+        <!-- Menu navigasi -->
+        <div class="nav-menu">
+          <a href="#hero" class="nav-link">Profile</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Tombol hamburger (harus di sini) -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <!-- Profile Picture Icon -->
+        <div class="profile-image">
+          <img
+            class="profile-svg"
+            src="https://www.svgrepo.com/show/433961/waving-hand.svg"
+            alt="Waving Hand"
+          />
+        </div>
+        <!-- Main Title - ganti -->
+        <h1 class="hero-title">Aisyah Edwan Mursalaat</h1>
+        <!-- Subtitle -->
+        <h2 class="hero-subtitle">Frontend Developer & UI/UX Designer</h2>
+        <!-- Description -->
+        <p class="hero-description">
+          Ay hii! 🌸 Welcome to my little corner of the digital world. I’m
+          passionate about creating beautiful, responsive, and user-friendly web
+          experiences using modern technologies and best practices.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('portfolio')">
+            View My Work
+          </button>
+          <button class="btn-secondary">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7,10 12,15 17,10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download CV
+          </button>
+        </div>
+
+        <!-- Social Media Links - ganti # dengan link media sosial Anda -->
+        <div class="social-links">
+          <a href="https://github.com/AisyahMursalaat" class="social-link">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aisyah-edwan-mursalaat-7a8b3b242/?originalSubdomain=id"
+            class="social-link"
+          >
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:aisyah.edwan@mhs.unj.ac.id" class="social-link">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="6,9 12,15 18,9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <!-- paragraf cerita tentang saya -->
+            <p>
+              I’m Aisyah, a passionate student of Information Systems and
+              Technology with a strong interest in digital & creative projects.
+              I love exploring how digital experiences work and finding ways to
+              make them more engaging, intuitive, and enjoyable for users
+            </p>
+            <p>
+              During my studies, I’ve gained hands-on experience in creating
+              prototypes, managing projects, and developing interactive
+              solutions. I enjoy learning new tools and approaches to make
+              digital experiences more effective and fun.
+            </p>
+            <p>
+              I’m enthusiastic about combining creativity, design thinking, and
+              technology to create digital experiences that are both beautiful
+              and user-friendly
+            </p>
+
+            <!-- Statistics -->
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="code-philosophy">
+              <svg
+                width="96"
+                height="96"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16,18 22,12 16,6"></polyline>
+                <polyline points="8,6 2,12 8,18"></polyline>
+              </svg>
+              <h3>Curious Learner</h3>
+              <p>
+                Always exploring new ideas, tools, and creative digital
+                solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div class="skill-icon orange">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16,18 22,12 16,6"></polyline>
+                <polyline points="8,6 2,12 8,18"></polyline>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>HTML5 & CSS3</h3>
+              <div class="skill-level">95% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div class="skill-icon yellow">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16,18 22,12 16,6"></polyline>
+                <polyline points="8,6 2,12 8,18"></polyline>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>JavaScript</h3>
+              <div class="skill-level">90% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div class="skill-icon blue">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16,18 22,12 16,6"></polyline>
+                <polyline points="8,6 2,12 8,18"></polyline>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Soft Skills</h3>
+              <div class="skill-level">101% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card">
+            <div class="skill-icon purple">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                ></path>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>UI/UX Design</h3>
+              <div class="skill-level">85% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-card">
+            <div class="skill-icon green">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Responsive Design</h3>
+              <div class="skill-level">92% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="skill-card">
+            <div class="skill-icon red">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <h3>Web Development</h3>
+              <div class="skill-level">90% Proficiency</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Here are some of my recent projects that showcase my skills in
+            modern web development
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="E-Commerce Platform"
+              />
+              <div class="project-overlay">
+                <button class="view-btn">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15,3 21,3 21,9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                Modern responsive e-commerce website with shopping cart
+                functionality
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                alt="Portfolio Dashboard"
+              />
+              <div class="project-overlay">
+                <button class="view-btn">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15,3 21,3 21,9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Dashboard</h3>
+              <p>
+                Interactive dashboard for portfolio management with data
+                visualization
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Charts.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661418110849-4fd7b3ec3c62?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Mobile App Landing"
+              />
+              <div class="project-overlay">
+                <button class="view-btn">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15,3 21,3 21,9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  View
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Mobile App Landing</h3>
+              <p>
+                Responsive landing page for mobile application with animations
+              </p>
+              <div class="project-tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">Animations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-content left">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span class="experience-period">2024 - Present</span>
+                </div>
+                <h3>Senior Frontend Developer</h3>
+                <h4>Tech Innovations Inc.</h4>
+                <p>
+                  Lead frontend development team, implementing modern web
+                  technologies
+                </p>
+              </div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-content right">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span class="experience-period">2024 - Present</span>
+                </div>
+                <h3>Treasurer Communication and Information Division</h3>
+                <h4>Student Executive Board STI UNJ</h4>
+                <p>Managed division finances and budget planning.</p>
+              </div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-content left">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span class="experience-period">2024 - Present</span>
+                </div>
+                <h3>Social Media Manager</h3>
+                <h4>
+                  Google Developer Group on Campus State University of Jakarta
+                </h4>
+                <p>Managed social media content strategy and analytics.</p>
+              </div>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Ready to work together? Let's discuss your next project and create
+            something amazing.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <!-- Contact Info -->
+            <div class="contact-item">
+              <div class="contact-icon blue">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>Aisyah.edwan@mhs.unj.ac.id</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon purple">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>+62 82122163966</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon green">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Depok, ID</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form>
+              <div class="form-row">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <input type="text" placeholder="Subject" required />
+              <textarea placeholder="Your Message" rows="6" required></textarea>
+              <button type="submit" class="btn-submit">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Brand -->
+          <div class="footer-brand">Aisyah Edwan M</div>
+          <p>
+            Thank you for visiting my portfolio. Let's create something amazing
+            together!
+          </p>
+          <!-- Footer Social Links -->
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            © 2025 Aisyah Edwan M. Built with HTML5, CSS3, and JavaScript.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript untuk interaksi website -->
+    <script>
+      // Fungsi untuk scroll smooth ke section tertentu
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+
+      // Event listener untuk navigation links
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          scrollToSection(targetId);
+        });
+      });
+
+      // Efek navbar saat scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+          navbar.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.1)";
+        } else {
+          navbar.style.background = "rgba(255, 255, 255, 0.9)";
+          navbar.style.boxShadow = "none";
+        }
+      });
+
+      // Animasi skill bars saat terlihat
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const skillObserver = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const skillBars = entry.target.querySelectorAll(".skill-progress");
+            skillBars.forEach((bar) => {
+              bar.style.width =
+                bar.parentElement.dataset.width || bar.style.width;
+            });
+          }
+        });
+      }, observerOptions);
+
+      const skillsSection = document.querySelector(".skills");
+      if (skillsSection) {
+        skillObserver.observe(skillsSection);
+      }
+
+      // Handle form submission
+      const contactForm = document.querySelector(".contact-form form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! I will get back to you soon.");
+        });
+      }
+
+      // Parallax effect untuk hero background
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const heroBackground = document.querySelector(".hero-bg");
+        if (heroBackground) {
+          heroBackground.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+      });
+    </script>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("active");
+      }
+
+      // Supaya nav-menu hilang setelah klik salah satu link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".nav-menu").classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
